@@ -1,0 +1,172 @@
+html,
+body {
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  -red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: #270082;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+nav {
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid white;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+.hero-section {
+  background-image: url(./hero_image.png);
+  height: 100vh;
+  display: flex;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.hero-section .container {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+.hero-section h1 {
+  font-size: 95px;
+}
+.hero-section h3 {
+  font-size: 40px;
+}
+.hero-section p {
+  font-size: 21px;
+}
+.music-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  border-radius: 3px;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.primary-btn {
+  background-color: #dc0000;
+  color: #f9f6ff;
+}
+.secondary-btn {
+  background-color: var(--purple300);
+  color: white;
+}
+.about-music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.video-section {
+  background-image: url(./video.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gift-section button {
+  height: 45px;
+  width: 150px;
+  border-radius: 6px;
+}
+footer {
+  background-color: #1b0058;
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+  text-align: center;
+}
